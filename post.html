@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng thiết bị cho thuê - Tech Share</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Tech Share</a>
+        <div class="collapse navbar-collapse" id="menuTop">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Xem danh mục</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="post.html">Đăng cho thuê</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="profile.html" class="btn btn-light btn-sm"
+              >Tài khoản của tôi</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h4>Đăng thiết bị cho thuê</h4>
+      <p class="text-muted">
+        Điền thông tin thiết bị bạn muốn cho thuê để các bạn sinh viên khác có
+        thể tìm thấy.
+      </p>
+
+      <div class="row mt-3">
+        <div class="col-md-8">
+          <div class="bg-white border rounded p-4 mb-4">
+            <form action="profile.html">
+              <div class="mb-3">
+                <label class="form-label fw-bold">Tên thiết bị</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="VD: Laptop Dell XPS 13, Máy ảnh Sony A6000..."
+                  required
+                />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-bold">Danh mục</label>
+                  <select class="form-select" required>
+                    <option value="">-- Chọn danh mục --</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="camera">Máy ảnh</option>
+                    <option value="projector">Máy chiếu</option>
+                    <option value="other">Khác</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-bold"
+                    >Giá cho thuê (VND/ngày)</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="VD: 150000"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Tiền cọc yêu cầu (VND)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="VD: 2000000"
+                  required
+                />
+                <div class="form-text">
+                  Ngoài tiền cọc, sinh viên thuê thường để lại CCCD hoặc Thẻ
+                  sinh viên.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Mô tả tình trạng máy</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Mô tả chi tiết cấu hình, ngoại hình, pin, các phần mềm đã cài sẵn..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Hình ảnh thiết bị</label>
+                <input
+                  class="form-control"
+                  type="file"
+                  id="formFile"
+                  multiple
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-2 w-100">
+                Đăng bài
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Cột hướng dẫn -->
+        <div class="col-md-4">
+          <div class="info-box">
+            <h6 class="fw-bold">Quy định đăng bài</h6>
+            <ul style="font-size: 14px; padding-left: 15px">
+              <li>Vui lòng chụp ảnh thật của thiết bị.</li>
+              <li>
+                Đảm bảo thiết bị hoạt động tốt trước khi giao cho người thuê.
+              </li>
+              <li>
+                Nên hẹn gặp giao dịch trong khuôn viên trường học (Căn tin, Thư
+                viện) để đảm bảo an toàn.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer text-center mt-5">
+      <div class="container">
+        <p class="mb-0">Đồ án môn học: Công nghệ phần mềm</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

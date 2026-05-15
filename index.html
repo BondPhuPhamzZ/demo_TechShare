@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ - Tech Share</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar cơ bản -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Tech Share</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuTop"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuTop">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Xem danh mục</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Đăng cho thuê</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="login.html" class="btn btn-light btn-sm me-2">Đăng nhập</a>
+            <a href="register.html" class="btn btn-outline-light btn-sm"
+              >Đăng ký</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Vùng giới thiệu đơn giản -->
+    <div class="container mt-4">
+      <div class="p-4 bg-white border rounded text-center">
+        <h3>Hệ thống cho thuê thiết bị công nghệ sinh viên</h3>
+        <p>
+          Giải pháp tiết kiệm cho sinh viên cần mượn đồ làm bài tập lớn, đồ án
+          hoặc sự kiện.
+        </p>
+        <form
+          class="d-flex justify-content-center mt-3"
+          style="max-width: 500px; margin: auto"
+          action="catalog.html"
+        >
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Nhập tên thiết bị (VD: Laptop, Máy ảnh...)"
+            required
+          />
+          <button class="btn btn-primary" type="submit">Tìm</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="container mt-4">
+      <h4>Thiết bị mới đăng gần đây</h4>
+      <hr />
+      <div class="row">
+        <!-- Sản phẩm 1 -->
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&q=80"
+              class="card-img-top"
+              alt="Laptop"
+            />
+            <div class="card-body">
+              <h6 class="card-title">MacBook Pro 2020 16GB</h6>
+              <p class="price-text mb-1">150.000 đ/ngày</p>
+              <p class="card-text text-muted" style="font-size: 13px">
+                Người cho thuê: SV Tuấn Anh
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm w-100"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 2 -->
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=300&q=80"
+              class="card-img-top"
+              alt="Máy ảnh"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Máy ảnh Sony A6000</h6>
+              <p class="price-text mb-1">120.000 đ/ngày</p>
+              <p class="card-text text-muted" style="font-size: 13px">
+                Người cho thuê: SV Mai Phương
+              </p>
+              <a href="#" class="btn btn-primary btn-sm w-100">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 3 -->
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=300&q=80"
+              class="card-img-top"
+              alt="Laptop Dell"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Laptop Dell XPS 13</h6>
+              <p class="price-text mb-1">140.000 đ/ngày</p>
+              <p class="card-text text-muted" style="font-size: 13px">
+                Người cho thuê: SV Hải Đăng
+              </p>
+              <a href="#" class="btn btn-primary btn-sm w-100">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 4 -->
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1527814050087-179f015eb37c?w=300&q=80"
+              class="card-img-top"
+              alt="Máy chiếu"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Máy chiếu mini XGIMI</h6>
+              <p class="price-text mb-1">80.000 đ/ngày</p>
+              <p class="card-text text-muted" style="font-size: 13px">
+                Người cho thuê: SV Bảo Ngọc
+              </p>
+              <a href="#" class="btn btn-primary btn-sm w-100">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer text-center">
+      <div class="container">
+        <p class="mb-0">Đồ án môn học: Công nghệ phần mềm</p>
+        <p class="mb-0">Đề tài: Nền tảng chia sẻ thiết bị (Tech Share)</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

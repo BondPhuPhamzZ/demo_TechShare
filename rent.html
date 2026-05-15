@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt thuê thiết bị - Tech Share</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Tech Share</a>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h4>Quy trình thuê thiết bị</h4>
+      <div class="row mt-3">
+        <!-- Form thông tin -->
+        <div class="col-md-7">
+          <div class="bg-white border rounded p-4 mb-3">
+            <form id="rentForm">
+              <h6 class="border-bottom pb-2 mb-3">Thông tin của bạn</h6>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Họ và tên sinh viên</label>
+                <input type="text" class="form-control" required />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-bold"
+                    >Mã số sinh viên (MSSV)</label
+                  >
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-bold"
+                    >Số điện thoại liên hệ</label
+                  >
+                  <input type="text" class="form-control" required />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Thời gian nhận máy dự kiến</label
+                >
+                <input type="date" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Ghi chú thêm</label>
+                <textarea class="form-control" rows="2"></textarea>
+              </div>
+
+              <div class="info-box">
+                <strong>Lưu ý:</strong> Chủ máy sẽ liên hệ trực tiếp với bạn qua
+                điện thoại để hẹn địa điểm giao dịch (Thường là thư viện hoặc
+                sảnh trường).
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Tính tiền -->
+        <div class="col-md-5">
+          <div class="bg-white border rounded p-4">
+            <h6 class="border-bottom pb-2 mb-3">Thông tin thanh toán</h6>
+
+            <p class="mb-1"><strong>Thiết bị:</strong> MacBook Pro 2020</p>
+            <p class="mb-3"><strong>Giá thuê:</strong> 150.000 đ/ngày</p>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Nhập số ngày mượn:</label>
+              <input
+                type="number"
+                id="rentDays"
+                class="form-control"
+                value="1"
+                min="1"
+              />
+            </div>
+
+            <table class="table table-bordered mt-3">
+              <tbody>
+                <tr>
+                  <td>Tiền thuê (<span id="daysCount">1</span> ngày)</td>
+                  <td class="text-end" id="totalRent">150.000 đ</td>
+                </tr>
+                <tr>
+                  <td>Tiền cọc (Hoàn trả sau)</td>
+                  <td class="text-end" id="depositAmount">2.000.000 đ</td>
+                </tr>
+                <tr class="table-light">
+                  <td><strong>Tổng tiền cần mang theo</strong></td>
+                  <td class="text-end price-text" id="finalTotal">
+                    2.150.000 đ
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button type="submit" form="rentForm" class="btn btn-primary w-100">
+              Gửi yêu cầu thuê
+            </button>
+            <a href="detail.html" class="btn btn-outline-secondary w-100 mt-2"
+              >Hủy bỏ</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer text-center mt-5">
+      <div class="container">
+        <p class="mb-0">Đồ án môn học: Công nghệ phần mềm</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

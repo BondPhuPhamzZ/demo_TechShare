@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết thiết bị - Tech Share</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Tech Share</a>
+        <div class="collapse navbar-collapse" id="menuTop">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="catalog.html">Xem danh mục</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Đăng cho thuê</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="mb-3">
+        <a href="catalog.html" class="text-decoration-none"
+          >&laquo; Quay lại danh mục</a
+        >
+      </div>
+
+      <div class="row">
+        <!-- Ảnh -->
+        <div class="col-md-5">
+          <div class="border rounded p-2 bg-white">
+            <img
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80"
+              class="img-fluid"
+              alt="Macbook"
+            />
+          </div>
+        </div>
+
+        <!-- Thông tin -->
+        <div class="col-md-7">
+          <div class="bg-white border rounded p-4">
+            <h4>MacBook Pro 2020 16GB / 512GB</h4>
+            <p class="text-muted">Danh mục: Laptop</p>
+            <h5 class="price-text mb-3">150.000 đ/ngày</h5>
+
+            <div class="info-box mb-3">
+              <p class="mb-1">
+                <strong>Người cho thuê:</strong> SV Trần Tuấn Anh (Khoa CNTT)
+              </p>
+              <p class="mb-1">
+                <strong>Uy tín:</strong>
+                <span class="text-warning" style="font-size: 18px">★★★★☆</span>
+                (4.5/5 từ 12 lượt thuê)
+              </p>
+              <p class="mb-1">
+                <strong>Số điện thoại:</strong> 090xxxxxxx (Sẽ hiển thị khi đặt
+                thuê)
+              </p>
+              <p class="mb-0 text-success">✔ Sinh viên đã xác thực</p>
+            </div>
+
+            <h6>Mô tả tình trạng máy:</h6>
+            <ul style="font-size: 14px">
+              <li>Máy hoạt động bình thường, mượt mà.</li>
+              <li>
+                Có cài sẵn VS Code, Visual Studio 2022, SQL Server. Thích hợp
+                mượn làm đồ án.
+              </li>
+              <li>Phụ kiện đi kèm: Sạc cáp zin, Túi chống sốc.</li>
+            </ul>
+
+            <h6>Yêu cầu cọc:</h6>
+            <ul style="font-size: 14px; color: red">
+              <li>Tiền cọc: 2.000.000 đ</li>
+              <li>Giữ Thẻ sinh viên hoặc CCCD bản gốc trong thời gian mượn.</li>
+            </ul>
+
+            <a href="rent.html" class="btn btn-primary mt-2"
+              >Tiến hành đặt thuê</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bình luận / Đánh giá -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="bg-white border rounded p-4">
+            <h5>Đánh giá từ sinh viên khác</h5>
+            <hr />
+
+            <!-- Dòng đánh giá -->
+            <div class="d-flex mb-3">
+              <div class="user-avatar-sm me-2">MK</div>
+              <div>
+                <p class="mb-0 fw-bold" style="font-size: 14px">
+                  Minh Khang <span class="text-warning">★★★★★</span>
+                  <span class="text-muted fw-normal">(Đã thuê tuần trước)</span>
+                </p>
+                <p class="mb-0" style="font-size: 14px">
+                  Máy xài ngon, anh chủ hỗ trợ nhiệt tình.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="user-avatar-sm me-2">HT</div>
+              <div>
+                <p class="mb-0 fw-bold" style="font-size: 14px">
+                  Huyền Trang <span class="text-warning">★★★★☆</span>
+                  <span class="text-muted fw-normal"
+                    >(Đã thuê 2 tháng trước)</span
+                  >
+                </p>
+                <p class="mb-0" style="font-size: 14px">
+                  Pin còn tốt, mượn làm bài tập nhóm quá hợp lý.
+                </p>
+              </div>
+            </div>
+
+            <h6 class="mt-4 border-top pt-3">Viết đánh giá của bạn</h6>
+            <form>
+              <div class="mb-2">
+                <label style="font-size: 14px; font-weight: bold"
+                  >Đánh giá sao:</label
+                >
+                <select
+                  class="form-select form-select-sm w-auto d-inline-block ms-2"
+                >
+                  <option>5 sao (Rất tốt)</option>
+                  <option>4 sao (Tốt)</option>
+                  <option>3 sao (Bình thường)</option>
+                  <option>2 sao (Tệ)</option>
+                  <option>1 sao (Rất tệ)</option>
+                </select>
+              </div>
+              <textarea
+                class="form-control mb-2"
+                rows="2"
+                placeholder="Nhập nhận xét của bạn về chủ thiết bị và máy..."
+              ></textarea>
+              <button type="button" class="btn btn-sm btn-primary">
+                Gửi đánh giá
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer text-center">
+      <div class="container">
+        <p class="mb-0">Đồ án môn học: Công nghệ phần mềm</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

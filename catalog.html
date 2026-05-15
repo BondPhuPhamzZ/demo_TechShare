@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh mục thiết bị - Tech Share</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Tech Share</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuTop"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuTop">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="catalog.html">Xem danh mục</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Đăng cho thuê</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="profile.html" class="btn btn-light btn-sm"
+              >Tài khoản của tôi</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Cột Bộ Lọc -->
+        <div class="col-md-3 mb-4">
+          <div class="bg-white p-3 border rounded">
+            <h5 class="border-bottom pb-2">Bộ lọc</h5>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Loại thiết bị</label>
+                <select class="form-select form-select-sm">
+                  <option value="all">Tất cả</option>
+                  <option value="laptop">Laptop</option>
+                  <option value="camera">Máy ảnh</option>
+                  <option value="projector">Máy chiếu</option>
+                  <option value="other">Khác</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Mức giá tối đa/ngày</label>
+                <input
+                  type="number"
+                  class="form-control form-control-sm"
+                  placeholder="VD: 200000"
+                />
+              </div>
+
+              <button type="button" class="btn btn-primary btn-sm w-100">
+                Lọc kết quả
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Cột Danh Sách -->
+        <div class="col-md-9">
+          <div class="bg-white p-3 border rounded mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">Tìm thấy 4 thiết bị</span>
+              <select class="form-select form-select-sm w-auto">
+                <option>Mới nhất</option>
+                <option>Giá rẻ nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Sản phẩm 1 -->
+            <div class="col-md-4 col-sm-6 mb-3">
+              <div class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&q=80"
+                  class="card-img-top"
+                  alt="Laptop"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">MacBook Pro 2020 16GB</h6>
+                  <p class="price-text mb-1">150.000 đ/ngày</p>
+                  <p class="card-text text-muted mb-2" style="font-size: 13px">
+                    SV Tuấn Anh (Đã cho thuê 5 lần)
+                  </p>
+                  <a href="detail.html" class="btn btn-primary btn-sm w-100"
+                    >Xem chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 2 -->
+            <div class="col-md-4 col-sm-6 mb-3">
+              <div class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=300&q=80"
+                  class="card-img-top"
+                  alt="Máy ảnh"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Máy ảnh Sony A6000</h6>
+                  <p class="price-text mb-1">120.000 đ/ngày</p>
+                  <p class="card-text text-muted mb-2" style="font-size: 13px">
+                    SV Mai Phương
+                  </p>
+                  <a href="#" class="btn btn-primary btn-sm w-100"
+                    >Xem chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Sản phẩm 3 -->
+            <div class="col-md-4 col-sm-6 mb-3">
+              <div class="card">
+                <img
+                  src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=300&q=80"
+                  class="card-img-top"
+                  alt="Laptop Dell"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">Laptop Dell XPS 13</h6>
+                  <p class="price-text mb-1">140.000 đ/ngày</p>
+                  <p class="card-text text-muted mb-2" style="font-size: 13px">
+                    SV Hải Đăng
+                  </p>
+                  <a href="#" class="btn btn-primary btn-sm w-100"
+                    >Xem chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phân trang cơ bản -->
+          <ul class="pagination pagination-sm mt-3">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Trang trước</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Trang sau</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer text-center">
+      <div class="container">
+        <p class="mb-0">Đồ án môn học: Công nghệ phần mềm</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

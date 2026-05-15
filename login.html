@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập - Tech Share</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f4f6f9">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Tech Share</a>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="bg-white border rounded p-4 shadow-sm">
+            <h4 class="text-center mb-4">Đăng nhập tài khoản</h4>
+
+            <form action="profile.html">
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Mã số sinh viên (Hoặc Email)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập MSSV"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Mật khẩu</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Nhập mật khẩu"
+                  required
+                />
+              </div>
+
+              <div class="d-flex justify-content-between mb-3">
+                <div>
+                  <input type="checkbox" id="remember" />
+                  <label for="remember">Nhớ mật khẩu</label>
+                </div>
+                <a href="#" class="text-decoration-none">Quên mật khẩu?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 mb-3">
+                Đăng nhập
+              </button>
+
+              <div class="text-center">
+                <span>Chưa có tài khoản? </span
+                ><a href="register.html" class="text-decoration-none"
+                  >Đăng ký ngay</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
