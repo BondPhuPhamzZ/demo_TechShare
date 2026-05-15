@@ -44,10 +44,7 @@
             <a class="nav-link active" href="#">Quản lý bài đăng</a>
           </li>
           <li class="nav-item mb-2">
-            <a class="nav-link" href="#">Quản lý tài khoản (Sinh viên)</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a class="nav-link" href="#">Thống kê hệ thống</a>
+            <a class="nav-link" href="#">Quản lý tài khoản User</a>
           </li>
         </ul>
         <div class="mt-auto pt-4">
@@ -63,96 +60,121 @@
         <div
           class="admin-header p-3 d-flex justify-content-between align-items-center"
         >
-          <h5 class="mb-0">Quản lý bài đăng cho thuê</h5>
+          <h5 class="mb-0">Quản lý hệ thống Tech Share</h5>
           <div>
             <span class="me-3">Xin chào, <strong>Admin Hữu Nghị</strong></span>
           </div>
         </div>
 
         <div class="p-4">
-          <!-- Dashboard Cards -->
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <div class="card text-white bg-primary mb-3">
-                <div class="card-body">
-                  <h5 class="card-title">Bài đăng đang hiển thị</h5>
-                  <h2 class="mb-0">142</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-white bg-warning mb-3">
-                <div class="card-body">
-                  <h5 class="card-title">Bài chờ duyệt</h5>
-                  <h2 class="mb-0">15</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-white bg-danger mb-3">
-                <div class="card-body">
-                  <h5 class="card-title">Bài vi phạm / Báo cáo</h5>
-                  <h2 class="mb-0">3</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Section 1: Quản lý bài đăng (Duyệt/Xóa) -->
+          <div class="bg-white border rounded p-4 mb-5">
+            <h5 class="fw-bold mb-3 text-primary">
+              1. Quản lý Bài đăng (Thiết bị)
+            </h5>
+            <p class="text-muted" style="font-size: 14px">
+              Duyệt các bài đăng mới và xóa các bài đăng vi phạm hoặc quá hạn.
+            </p>
 
-          <!-- Table Quản lý bài đăng -->
-          <div class="bg-white border rounded p-3">
-            <h6 class="fw-bold mb-3">Danh sách bài đăng gần đây</h6>
             <table
               class="table table-bordered table-hover text-center align-middle"
               style="font-size: 14px"
             >
               <thead class="table-light">
                 <tr>
-                  <th>ID</th>
+                  <th>ID Bài</th>
                   <th>Người đăng</th>
                   <th>Tên thiết bị</th>
-                  <th>Trạng thái</th>
                   <th>Ngày đăng</th>
-                  <th>Hành động (Admin)</th>
+                  <th>Trạng thái</th>
+                  <th>Quyền Admin</th>
                 </tr>
               </thead>
               <tbody>
-                <!-- Item 1 -->
+                <!-- Chờ duyệt -->
+                <tr>
+                  <td>#1002</td>
+                  <td>Mai Phương (20110012)</td>
+                  <td>IPhone 14 Pro Max (Hàng lock)</td>
+                  <td>15/05/2026</td>
+                  <td>
+                    <span class="badge bg-warning text-dark">Chờ duyệt</span>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-success">
+                      Duyệt hiển thị
+                    </button>
+                    <button class="btn btn-sm btn-danger">Từ chối</button>
+                  </td>
+                </tr>
+                <!-- Đã duyệt -->
                 <tr>
                   <td>#1001</td>
                   <td>Trần Tuấn Anh (20110000)</td>
                   <td>MacBook Pro 2020 16GB</td>
-                  <td><span class="badge bg-success">Đã duyệt</span></td>
-                  <td>15/05/2026</td>
+                  <td>10/05/2026</td>
+                  <td><span class="badge bg-success">Đang hoạt động</span></td>
                   <td>
                     <button class="btn btn-sm btn-outline-danger">
-                      Xóa bài
+                      Xóa (Quá hạn)
                     </button>
                   </td>
                 </tr>
-                <!-- Item 2 -->
-                <tr>
-                  <td>#1002</td>
-                  <td>Mai Phương (20110012)</td>
-                  <td>Cho thuê IPhone 14 Pro Max (Hàng lock)</td>
-                  <td>
-                    <span class="badge bg-warning text-dark">Chờ duyệt</span>
-                  </td>
-                  <td>15/05/2026</td>
-                  <td>
-                    <button class="btn btn-sm btn-success">Duyệt</button>
-                    <button class="btn btn-sm btn-danger">Từ chối</button>
-                  </td>
-                </tr>
-                <!-- Item 3 -->
+                <!-- Vi phạm -->
                 <tr>
                   <td>#0998</td>
                   <td>Lê Văn Luyện (20111222)</td>
                   <td>Bán acc game Liên quân</td>
+                  <td>01/05/2026</td>
                   <td><span class="badge bg-danger">Vi phạm nội quy</span></td>
-                  <td>10/05/2026</td>
                   <td>
-                    <button class="btn btn-sm btn-danger">Xóa vĩnh viễn</button>
+                    <button class="btn btn-sm btn-danger">Xóa bài</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Section 2: Quản lý User -->
+          <div class="bg-white border rounded p-4">
+            <h5 class="fw-bold mb-3 text-danger">
+              2. Quản lý Tài khoản Sinh viên
+            </h5>
+            <p class="text-muted" style="font-size: 14px">
+              Quản lý danh sách thành viên, khóa mõm các tài khoản lừa đảo, boom
+              hàng.
+            </p>
+
+            <table
+              class="table table-bordered table-hover text-center align-middle"
+              style="font-size: 14px"
+            >
+              <thead class="table-light">
+                <tr>
+                  <th>MSSV</th>
+                  <th>Họ và tên</th>
+                  <th>Uy tín</th>
+                  <th>Trạng thái tài khoản</th>
+                  <th>Quyền Admin</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20110000</td>
+                  <td>Trần Tuấn Anh</td>
+                  <td><span class="text-warning">★★★★☆</span></td>
+                  <td><span class="badge bg-success">Hoạt động tốt</span></td>
+                  <td>
                     <button class="btn btn-sm btn-dark">Khóa tài khoản</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20111222</td>
+                  <td>Lê Văn Luyện</td>
+                  <td><span class="text-warning">★☆☆☆☆</span></td>
+                  <td><span class="badge bg-danger">Bị báo cáo nhiều</span></td>
+                  <td>
+                    <button class="btn btn-sm btn-danger">Ban vĩnh viễn</button>
                   </td>
                 </tr>
               </tbody>

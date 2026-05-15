@@ -73,6 +73,47 @@
 
         <!-- Nội dung quản lý -->
         <div class="col-md-9">
+          <!-- Bảng 1: Nhận yêu cầu thuê (Quyền lợi của người đăng bài) -->
+          <div class="bg-white border rounded p-4 mb-4 border-warning">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="mb-0 text-warning fw-bold">
+                Yêu cầu thuê đang chờ bạn duyệt
+              </h5>
+            </div>
+            <p class="text-muted" style="font-size: 14px">
+              Có sinh viên đang muốn mượn đồ của bạn, hãy xem xét và duyệt.
+            </p>
+
+            <table
+              class="table table-hover border mt-3 text-center align-middle"
+            >
+              <thead class="table-light">
+                <tr>
+                  <th>Người muốn thuê</th>
+                  <th>Thiết bị</th>
+                  <th>Số ngày</th>
+                  <th>Tổng tiền/Cọc</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lê Minh Khang (20110022)</td>
+                  <td>MacBook Pro 2020 16GB</td>
+                  <td>3 ngày</td>
+                  <td>
+                    450.000đ <br /><small class="text-muted">(Cọc: 2tr)</small>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-success">Cho thuê</button>
+                    <button class="btn btn-sm btn-danger">Từ chối</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bảng 2: Quản lý thiết bị đã đăng -->
           <div class="bg-white border rounded p-4 mb-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h5 class="mb-0">Đồ bạn đang đăng cho thuê</h5>
@@ -104,13 +145,31 @@
                     <button class="btn btn-sm btn-outline-danger">Ẩn</button>
                   </td>
                 </tr>
+                <tr>
+                  <td>Máy chiếu mini XGIMI</td>
+                  <td>80.000 đ/ngày</td>
+                  <td>
+                    <span class="badge bg-warning text-dark"
+                      >Đang có người mượn</span
+                    >
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-outline-secondary" disabled>
+                      Sửa
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger" disabled>
+                      Ẩn
+                    </button>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
 
+          <!-- Bảng 3: Lịch sử đi thuê (Quyền lợi của người đi thuê) -->
           <div class="bg-white border rounded p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
-              <h5 class="mb-0">Lịch sử bạn đi mượn đồ</h5>
+              <h5 class="mb-0">Lịch sử bạn đi mượn đồ của người khác</h5>
             </div>
 
             <table
@@ -122,14 +181,20 @@
                   <th>Chủ máy</th>
                   <th>Thời gian</th>
                   <th>Trạng thái</th>
+                  <th>Đánh giá chủ máy</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Máy chiếu mini XGIMI</td>
-                  <td>Bảo Ngọc</td>
+                  <td>Máy ảnh Sony A6000</td>
+                  <td>Mai Phương</td>
                   <td>12/05 - 14/05</td>
                   <td><span class="badge bg-success">Đã trả máy</span></td>
+                  <td>
+                    <button class="btn btn-sm btn-outline-primary">
+                      Viết đánh giá
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>
